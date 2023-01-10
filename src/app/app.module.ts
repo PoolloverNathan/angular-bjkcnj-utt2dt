@@ -4,13 +4,15 @@ import { RouterModule } from '@angular/router'
 import { ReactiveFormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component'
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([{ path: '', component: HomeComponent }]),
+    BrowserAnimationsModule,
   ],
   declarations: [AppComponent, HomeComponent],
   bootstrap: [AppComponent],
